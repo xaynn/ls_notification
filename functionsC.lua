@@ -1,23 +1,25 @@
 ﻿
+
+local sx,sy = guiGetScreenSize() -- pobieramy rozdzielczość gracza który widzi gui
+local px,py = (sx/1920),(sy/1080) -- dzielimy rozdzielczość gracza który widzi gui przez rozdzielczość na której było robione gui.
 local blurBoxElementt = nil
 local currentStatee = false
 local timetoshow = 5000
 local fontscale = 1
-local x,y = guiGetScreenSize()
-if ( x <= 1440 ) and ( y <= 900 ) then
+if ( sx <= 1440 ) and ( sy <= 900 ) then
 fontscale = 0.85
 end
-if ( x <= 1280 ) and ( y <= 1024 ) then
+if ( sx <= 1280 ) and ( sy <= 1024 ) then
 fontscale = 0.80
 end --1280 1024
 
-if ( x <= 1176 ) and ( y <= 664 ) then
+if ( sx <= 1176 ) and ( sy <= 664 ) then
 fontscale = 0.75
 end --1
-if ( x <= 1024 ) and ( y <= 768 ) then
+if ( sx <= 1024 ) and ( sy <= 768 ) then
 fontscale = 0.65
 end
-if ( x <= 800 ) and ( y <= 600 ) then
+if ( sx <= 800 ) and ( sy <= 600 ) then
 fontscale = 0.48
 end
 -- 1024 768
