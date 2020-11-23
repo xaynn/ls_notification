@@ -1,0 +1,12 @@
+<meta>
+	<script src="sourceS.lua" type="server" />
+    <!-- <script src="functionsC.luac" type="client" /> -->
+			<script src="functionsC.lua" type="client" cache="false"/>
+
+        <file src="files/beep.mp3" type="client" />
+        <file src="files/beepquit.mp3" type="client" />
+
+        <export function="NewNotification" type="client" />
+	<export function="NewNotification" />
+
+</meta>
